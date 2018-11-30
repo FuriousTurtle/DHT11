@@ -1,3 +1,3 @@
 <?php
-alert('Hello world!');
+echo('Hello world!');
 ?>
