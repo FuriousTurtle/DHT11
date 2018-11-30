@@ -1,5 +1,6 @@
 <?php
-
+$json_source = file_get_contents('data.txt');
+$json_data = json_decode($json_source);
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,11 +10,8 @@
 	<title>Thermomètre</title>
 </head>
 <body>
-
-	<div id="main">
-		<h1>Température</h1>
-		<img src="img/thermometer.jpg">
-	</div>
-
+<h1>Température</h1>
+<p>Il fait <?php echo $json_data->temperature ; ?>°C avec <?php echo $json_data->humidite ; ?>% d'humidité.</br></p>
+<div id="thermometer"> <div id="bargraph"></div> </div>
 </body>
 </html>
