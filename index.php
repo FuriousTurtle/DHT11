@@ -12,6 +12,6 @@ echo('Hello world!');
 
 	<div id="main"><img src="thermometer.jpg"></div>
 
-<script type="text/javascript" src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,7 +1,10 @@
-(function(){
+$(function () {
+
+
 
 alert("oof");
 
 
 
-})
+});
+
