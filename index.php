@@ -9,6 +9,7 @@ $edittime = date("d/m/Y H:i:s.",filemtime("data.json"));
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="refresh" content="1">
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 	<meta charset="utf-8">
 	<title>Thermomètre</title>
