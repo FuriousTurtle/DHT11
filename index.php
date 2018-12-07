@@ -1,10 +1,10 @@
 <?php
-$json_source = file_get_contents('data.txt');
+$json_source = file_get_contents('data.json');
 $json_data = json_decode($json_source);
 $degres = $json_data->temperature;
 $hauteurcalc = (161 + ($degres * 4));
 $topcalc = (315 + -($degres * 4));
-$edittime = date("d/m/Y H:i:s.",filemtime("data.txt"));
+$edittime = date("d/m/Y H:i:s.",filemtime("data.json"));
 ?>
 <!DOCTYPE html>
 <html>
