@@ -1,6 +1,8 @@
 <?php
-$json_source = file_get_contents('data.json');
+$data = "data.json";
+$json_source = file_get_contents($data);
 $json_data = json_decode($json_source);
+
 $degres = $json_data->temperature;
 $hauteurcalc = (161 + ($degres * 4));
 $topcalc = (315 + -($degres * 4));
@@ -9,7 +11,6 @@ $edittime = date("d/m/Y H:i:s.",filemtime("data.json"));
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="refresh" content="1">
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 	<meta charset="utf-8">
 	<title>Thermomètre</title>
